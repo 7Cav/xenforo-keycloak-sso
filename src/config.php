@@ -7,3 +7,8 @@ $config['db']['password'] = getenv('DB_PASSWORD');
 $config['db']['dbname'] = getenv('DB_NAME');
 
 $config['fullUnicode'] = true;
+
+$config['enableMail'] = false;
+$config['debug'] = true;
+$config['development']['enabled'] = true;
+$config['development']['defaultAddOn'] = '7Cav/Keycloak';
