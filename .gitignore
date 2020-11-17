@@ -19,6 +19,7 @@ src/addons/7cav/**
 !.github/**
 !.github/
 !.gitignore
+!readme.md
 
 ### Docker items ###
 !.docker/**
