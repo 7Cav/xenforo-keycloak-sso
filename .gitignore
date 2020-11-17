@@ -1,9 +1,10 @@
 ### Ignore everything ###
 *
 
-### Ignore files other than our addon ###
+### Ignore files other than our addon & config ###
 !src/
 src/**
+!src/config.php
 !src/addons/
 src/addons/**
 !src/addons/7cav/
@@ -11,10 +12,14 @@ src/addons/7cav/**
 !src/addons/7cav/keycloak/
 !src/addons/7cav/keycloak/**
 
-### General repo items
+### Installer ###
 !install-from-zip.sh
-!.docker/**
-!.docker/
+
+### General repo items ###
 !.github/**
 !.github/
 !.gitignore
+
+### Docker items ###
+!.docker/**
+!.docker/
