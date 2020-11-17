@@ -13,6 +13,6 @@
 
 If you want to use the xenforo CLI, you can execute it via the docker CLI to run within the PHP container
 
-```
+```sh
 docker exec xenforo php cmd.php
 ```
