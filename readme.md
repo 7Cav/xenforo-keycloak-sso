@@ -14,5 +14,7 @@
 If you want to use the xenforo CLI to it's full extent, you can execute it via the docker CLI to run within the PHP container
 
 ```sh
-docker exec xenforo php cmd.php
+docker exec -it xenforo php cmd.php
 ```
+
+It's important to keep the `-it` after docker exec, so that we attach to the output of the command in case there are any input prompts
