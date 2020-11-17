@@ -7,10 +7,10 @@ src/**
 !src/config.php
 !src/addons/
 src/addons/**
-!src/addons/7cav/
-src/addons/7cav/**
-!src/addons/7cav/keycloak/
-!src/addons/7cav/keycloak/**
+!src/addons/Cav7/
+src/addons/Cav7/**
+!src/addons/Cav7/Keycloak/
+!src/addons/Cav7/Keycloak/**
 
 ### Installer ###
 !install-from-zip.sh
