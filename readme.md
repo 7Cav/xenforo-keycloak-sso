@@ -8,3 +8,11 @@
 4. (If running the containers for the first time) Navigate to `localhost/install` and follow the required steps
 
 > Note: you can run step 2 again if you need to restore any default xenforo files to default
+
+## Running xenforo CLI
+
+If you want to use the xenforo CLI, you can execute it via the docker CLI to run within the PHP container
+
+```
+docker exec xenforo php cmd.php
+```
