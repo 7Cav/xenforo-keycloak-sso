@@ -22,7 +22,7 @@ services:
       DB_PORT: 3306
       DB_HOST: xenforo-db
       DB_USER: xenforo
-      DB_PASSWORD: EcF7T7UGkH4mPGrHDKzwaJjQ
+      DB_PASSWORD: password
       DB_NAME: xenforo
 
   nginx:
@@ -53,14 +53,16 @@ services:
       start_period: 1m
     networks:
       - xenforo
+    ports:
+      - 3306:3306
     image: mariadb:10.3
     volumes:
       - xenforo-database:/var/lib/mysql
     environment:
       MYSQL_DATABASE: xenforo
       MYSQL_USER: xenforo
-      MYSQL_PASSWORD: EcF7T7UGkH4mPGrHDKzwaJjQ
-      MYSQL_ROOT_PASSWORD: hkRAFzkhwFW7RP52rA54XhBBJvDz
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: secret
 
 volumes:
   xenforo-database:
