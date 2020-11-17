@@ -9,7 +9,7 @@ function install() {
 
     if [ -f "admin.php" ]; then
         echo "Removing existing xenforo dir"
-        git clean -x -f ;
+        git clean -xdf;
     fi
 
     mv /tmp/xenforo.zip $XENFORO_ZIP
