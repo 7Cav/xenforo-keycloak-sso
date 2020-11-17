@@ -1,0 +1,8 @@
+*
+!src/addons/7cav/keycloak/**
+!install-from-zip.sh
+!.docker/**
+!.docker/
+!.github/**
+!.github/
+!.gitignore
