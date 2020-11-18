@@ -14,16 +14,20 @@ services:
       start_period: 1m
     networks:
       - xenforo
+    ports:
+      - 9000:9000
     restart: always
     working_dir: /var/www/html
     volumes:
       - xenforo-data:/var/www/html
+      - ./.docker/xdebug.ini:/usr/local/etc/php/conf.d/xdebug-local.ini
     environment:
       DB_PORT: 3306
       DB_HOST: xenforo-db
       DB_USER: xenforo
       DB_PASSWORD: password
       DB_NAME: xenforo
+      PHP_IDE_CONFIG: 'serverName=localhost'
 
   nginx:
     image: nginx:1.19-alpine
