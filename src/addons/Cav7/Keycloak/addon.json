@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "",
+    "title": "7Cav - Keycloak SSO",
+    "description": "Adds functionality to login using a Keycloak host.",
+    "version_id": 1,
+    "version_string": "0.0.1",
+    "dev": "",
+    "dev_url": "",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": [],
+    "require": [],
+    "icon": ""
+}

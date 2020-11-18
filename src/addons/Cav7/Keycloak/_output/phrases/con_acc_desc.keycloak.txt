@@ -1,0 +1,1 @@
+You can manage clients via the admin console, and the other items via <code>{domain}/auth/realms/{realm}/.well-known/openid-configuration</code>

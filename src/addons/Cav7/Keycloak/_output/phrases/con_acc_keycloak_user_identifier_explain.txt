@@ -1,0 +1,1 @@
+The claim that you wish to use as a unique identifier for users.

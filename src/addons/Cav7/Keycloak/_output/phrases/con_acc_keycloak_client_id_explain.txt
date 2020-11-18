@@ -1,0 +1,1 @@
+The ID that is associated with your Keycloak client for this domain.

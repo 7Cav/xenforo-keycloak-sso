@@ -1,0 +1,1 @@
+The Authentication URL for your Keycloak instance.
