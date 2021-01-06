@@ -27,7 +27,8 @@ services:
       DB_USER: xenforo
       DB_PASSWORD: password
       DB_NAME: xenforo
-      PHP_IDE_CONFIG: 'serverName=localhost'
+      PHP_IDE_CONFIG: 'serverName=172.17.0.1'
+      XDEBUG_CONFIG: 'remote_host=172.17.0.1'
 
   nginx:
     image: nginx:1.19-alpine
@@ -42,9 +43,9 @@ services:
       - xenforo
     ports:
       - 80:80
-    volumes_from:
-      - xenforo_server
     volumes:
+      - xenforo-data:/var/www/html
+      - ./.docker/xdebug.ini:/usr/local/etc/php/conf.d/xdebug-local.ini
       - xenforo-nginx-conf:/etc/nginx/conf.d/
 
   database:
@@ -74,12 +75,12 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: ./
+      device: /home/jarvis/Code/github/7cav/xenforo-keycloak-sso
   xenforo-nginx-conf:
     driver_opts:
       type: none
       o: bind
-      device: ./.docker/nginx/
+      device: /home/jarvis/Code/github/7cav/xenforo-keycloak-sso/.docker/nginx/
 
 networks:
   xenforo:
